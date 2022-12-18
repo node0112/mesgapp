@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body style="font-family: sans-serif; text-align: center;">
+  <% for(var i=0; i < messages.length; i++) { %>
+    <h1><%= messages[i].text %></h1>
+    <h3><%= messages[i].user %></h1>
+    <h5><%= messages[i].date %></h1>
+    <% } %>
+  <a href="/new">Create a message</a>
+</body>
+</html>
